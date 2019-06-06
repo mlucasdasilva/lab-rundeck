@@ -4,38 +4,40 @@ version: "3.3"
 services:
 
     servico1:
-      image: centos:centos7
+      image: sshd
+      build:
+        context: ./sshd
       command: tail -f < /dev/null
 
     servico2:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico3:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico4:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico5:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico6:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico7:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico8:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
     servico9:
-      image: centos:centos7
+      image: sshd
       command: tail -f < /dev/null
 
