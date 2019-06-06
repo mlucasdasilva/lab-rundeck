@@ -1,0 +1,43 @@
+version: "3.3"
+
+services:
+
+   rundeck:
+      #image: rundeck:3.0.20
+      image: rundeck-teste
+#      hostname: 192.168.56.31.nip.io
+      hostname: vrt1102
+      ports:
+        - 4440:4440
+      build:
+        context: .     
+#        args:
+#         - http_proxy=${HTTP_PROXY}
+#         - https_proxy=${HTTPS_PROXY}
+#         - HTTP_PROXY=${HTTP_PROXY}
+#         - HTTPS_PROXY=${HTTPS_PROXY}
+#         - no_proxy=${NO_PROXY}
+#         - NO_PROXY=${NO_PROXY}
+      volumes:
+        - rundeck:/usr/local/rundeck/
+      # command: java -jar rundeck-3.0.20-20190408.war
+#      links:
+#        - mysql:rundeck
+#      depends_on:
+#        - mysql
+#
+#   mysql:
+#      image: mysql:5.7.19
+#      environment:
+#        MYSQL_ROOT_PASSWORD: password
+#        MYSQL_DATABASE: rundeck
+#        MYSQL_USER: rundeckuser
+#        MYSQL_PASSWORD: rundeckpassword
+#      volumes:
+#        - mysqldb:var/lib/mysql
+#      restart: unless-stopped
+#
+
+volumes:
+   rundeck:
+#   mysqldb:
