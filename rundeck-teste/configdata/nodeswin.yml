@@ -1,0 +1,26 @@
+vrt1102:
+  nodename: vrt1102
+  hostname: vrt1102
+  osVersion: 3.10.0-862.3.3.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: Rundeck server node
+  osName: Linux
+  username: admin
+  tags: ''
+
+vmwin1:
+  description: 'Servidor de Aplicacao de Desenvolvimento'
+  hostname: 'vmwin1:5985'
+  nodename: 'vmwin1 - DSV'
+  osArch: 'x86_64'
+  osFamily: 'windows'
+  osName: 'Microsoft Windows Server 2008'
+  osVersion: 'Microsoft Windows Server 2008'
+  username: 'usuario@dominio'
+  connectionType: 'WINRM_NATIVE'
+  tags: 'dsv'
+  node-executor: 'overthere-winrm'
+  winrm-protocol: 'http'
+  winrm-auth-type: 'basic'
+  winrm-cmd: 'cmd'
