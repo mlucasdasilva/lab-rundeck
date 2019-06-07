@@ -5,8 +5,8 @@ services:
    rundeck:
       #image: rundeck:3.0.20
       image: rundeck-teste
-#      hostname: 192.168.56.31.nip.io
-      hostname: vrt1102
+      hostname: 192.168.56.31.nip.io
+#      hostname: vrt1102
       ports:
         - 4440:4440
       build:
