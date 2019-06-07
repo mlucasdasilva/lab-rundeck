@@ -1,0 +1,58 @@
+vrt1102:
+  nodename: vrt1102
+  hostname: vrt1102
+  osVersion: 3.10.0-862.3.3.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: Rundeck server node
+  osName: Linux
+  username: admin
+  tags: ''
+
+servico4:
+  nodename: servico4
+  hostname: servico4
+  osVersion: 3.10.0-862.3.3.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: servico4
+  osName: Linux
+  username: root
+  ssh-authentication: password
+  tags: ''
+
+servico1:
+  nodename: servico1
+  hostname: servico1
+  osVersion: 3.10.0-862.3.3.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: servico1
+  osName: Linux
+  username: root
+  ssh-authentication: password
+  tags: ''
+
+servico2:
+  nodename: servico2
+  hostname: servico2
+  osVersion: 3.10.0-862.3.3.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: servico2
+  osName: Linux
+  username: root
+  ssh-authentication: password
+  tags: ''
+
+servico3:
+  nodename: servico3
+  hostname: servico3
+  osVersion: 3.10.0-862.3.3.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: servico3
+  osName: Linux
+  username: root
+  ssh-authentication: password
+  tags: ''

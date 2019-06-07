@@ -5,21 +5,24 @@ services:
    rundeck:
       #image: rundeck:3.0.20
       image: rundeck-teste
-      hostname: 192.168.56.31.nip.io
-#      hostname: vrt1102
+#      hostname: 192.168.56.31.nip.io
+      hostname: vrt1102
+      environment:
+        # https://docs.rundeck.com/docs/administration/projects/project-archives.html
+        - RD_URL=http://rundeck:4440
       ports:
         - 4440:4440
       build:
-        context: .     
-#        args:
-#         - http_proxy=${HTTP_PROXY}
-#         - https_proxy=${HTTPS_PROXY}
-#         - HTTP_PROXY=${HTTP_PROXY}
-#         - HTTPS_PROXY=${HTTPS_PROXY}
-#         - no_proxy=${NO_PROXY}
-#         - NO_PROXY=${NO_PROXY}
+        context: ./rundeck-teste 
+        args:
+         - http_proxy=${HTTP_PROXY}
+         - https_proxy=${HTTPS_PROXY}
+         - HTTP_PROXY=${HTTP_PROXY}
+         - HTTPS_PROXY=${HTTPS_PROXY}
+         - no_proxy=${NO_PROXY}
+         - NO_PROXY=${NO_PROXY}
       volumes:
-        - rundeck:/usr/local/rundeck/
+        - rundeck01:/usr/local/rundeck/
       # command: java -jar rundeck-3.0.20-20190408.war
 #      links:
 #        - mysql:rundeck
@@ -39,5 +42,5 @@ services:
 #
 
 volumes:
-   rundeck:
+   rundeck01:
 #   mysqldb:
