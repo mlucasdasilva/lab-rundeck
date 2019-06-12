@@ -12,8 +12,8 @@ services:
         - RD_URL=http://rundeck:4440
       ports:
         - 4440:4440
-#      build:
-#        context: ./rundeck-teste 
+      build:
+        context: ./rundeck-teste 
 #        args:
 #         - http_proxy=${HTTP_PROXY}
 #         - https_proxy=${HTTPS_PROXY}
