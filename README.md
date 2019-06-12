@@ -47,19 +47,34 @@ No rundeck - Node configuration:
 
 
 vmwin1:
+
   description: 'Servidor de Aplicacao de Desenvolvimento'
+
   hostname: '192.168.56.102:5985'
+
   nodename: 'vmwin1 - DSV'
+
   osArch: 'x86_64'
+
   osFamily: 'windows'
+
   osName: 'Microsoft Windows Server 2008'
+
   osVersion: 'Microsoft Windows Server 2008'
+
   username: 'Administrator'
+
   connectionType: 'WINRM_NATIVE'
+
   tags: 'dsv'
+
   node-executor: 'overthere-winrm'
+
   winrm-protocol: 'http'
+
   winrm-auth-type: 'basic'
+
   winrm-cmd: 'cmd'
+
 
 
